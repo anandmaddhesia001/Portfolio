@@ -1,0 +1,162 @@
+.skillContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 6rem;
+    margin: 5rem auto;
+    gap: 30px;
+    width: 100vw;
+    max-width: 1600px;
+    flex-wrap: wrap;
+  }
+  
+  .leftSkillContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 300px;
+    flex: 1;
+  }
+  
+  .skillHeading {
+    color: gray;
+    font-weight: 700;
+    font-size: clamp(35px, 5vw, 50px);
+    line-height: 1.2;
+  }
+  
+  .skillHeading span {
+    font-size: clamp(50px, 8vw, 90px);
+    display: inline-block;
+  }
+  
+  .skillSubHeading {
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
+  }
+  
+  .skillSubHeading p {
+    margin: 15px 0;
+  }
+  
+  .rightSkillContainer {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 50%;
+    min-width: 300px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .blobStyle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: blobAnimation 3s linear infinite;
+    width: clamp(200px, 80%, 400px);
+  }
+  
+  @keyframes blobAnimation {
+    50% {
+      top: 54%;
+      left: 46%;
+    }
+  }
+  
+  .skillsLogo {
+    width: clamp(60px, 10vw, 80px);
+    transition: all 0.5s;
+  }
+  
+  .skillsLogo:hover {
+    transform: scale(1.2);
+  }
+  
+  .skillFadedText {
+    display: none;
+    font-size: clamp(6em, 12vw, 12em);
+    position: absolute;
+    right: 0;
+    bottom: -35%;
+    user-select: none;
+    color: #e7e7e7;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0.5;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1200px) {
+    .skillContainer {
+      padding: 3rem 1.5rem;
+      margin: 4rem auto;
+    }
+  
+    .skillSubHeading {
+      width: 95%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skillContainer {
+      flex-direction: column;
+      padding: 2rem 1rem;
+      margin: 3rem auto;
+      gap: 3rem;
+    }
+  
+    .leftSkillContainer,
+    .rightSkillContainer {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .skillSubHeading {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .rightSkillContainer {
+      padding: 2rem 0;
+    }
+  
+    .skillFadedText {
+      bottom: -15%;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  
+    .blobStyle {
+      width: 80%;
+      max-width: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .skillContainer {
+      padding: 1.5rem 1rem;
+      margin: 2rem auto;
+      gap: 2rem;
+    }
+  
+    .rightSkillContainer {
+      gap: 1.5rem;
+    }
+  
+    .skillsLogo {
+      width: 50px;
+    }
+  
+    .skillFadedText {
+      font-size: 5em;
+      bottom: -10%;
+    }
+  }
