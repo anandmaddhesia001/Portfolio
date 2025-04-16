@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Using Poppins font for a modern look */
+  text-decoration: none;
+}
+
 #intro{
     height: calc(100vh - 4rem);
     width: 100vw;
-    max-width: 80rem;
+    max-width: 85rem;
     display: flex;
     flex-direction: row-reverse;
     margin: 0 auto;
@@ -9,108 +19,263 @@
     position: relative;
 }
 
-.profileImg{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content:left;
-
-}
-
-.img{
-    object-fit: cover;
-    height: 40vh;
-    border: 5px solid white;
-}
-
 .introContent{
     height: 100vh;
     width: 100vw;
     padding: 2rem;
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 600;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.hello{
-    font-size: 2rem;
-    font-weight: 100;
-}
-.introName{
-    color: yellow;
-}
-.introPara{
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    font-weight: 300;
+
+.hello {
+  font-size: 2.5rem; /* Adjusted for better readability */
+  font-weight: 240;
+  margin-bottom: .1rem;
+  color: #ffcc00; /* Highlight "Hello" in gold */
 }
 
+.introName {
+  color: #ffcc00; /* Highlight name in gold */
+}
 
-.icons{
+.subHeading {
+  font-size: 2.4rem; /* Adjusted for better readability */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.role {
+  color: #ffcc00; /* Highlight role with the same color as the name */
+  font-weight: 600;
+  font-size: 3rem; /* Increased font size for role */
+}
+
+.introPara {
+  font-size: 1.2rem; /* Slightly larger for better readability */
+  letter-spacing: 1px;
+  font-weight: 300;
+  max-width: 70%;
+  margin-bottom: 2rem;
+}
+  
+  .heading {
+    font-size: 28px;
+    line-height: 25px;
+  }
+  
+  .subHeading {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  
+  
+  
+  .icons {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 1rem 0;
-    gap: 0 0.5em;
+    gap: 0.5em;
     align-items: center;
-    justify-content: left;
-}
-
-.iconImg:hover {
-    transform: scale(1.2);
-}
-
-.iconImg {
-    object-fit: cover;
-    transition: fill 0.3s ease;
+  }
+  
+  .iconImg {
     width: 50px;
     height: 50px;
+    object-fit: cover;
     cursor: pointer;
-}
-
-.downloadBtn{
+    transition: transform 0.3s ease;
+  }
+  
+  .iconImg:hover {
+    transform: scale(1.2);
+  }
+  
+  .downloadBtn {
     background: white;
     padding: 1rem 1.5rem;
     border: none;
-    border-radius: 1.75px;
+    border-radius: 5px;
     font-size: 1rem;
-}
-
-.btnImg{
+    cursor: pointer;
+  }
+  
+  .imgContainer {
+    position: absolute;
+    right: 2rem;             /* aligns it to the right */
+    top: 50%;                /* move it to middle vertically */
+    transform: translateY(-50%);  /* perfectly centers it vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .userImage {
+    padding: 2.5rem;
+    width: 345px;
+    height: 390px;
+    animation: scaleImage 5s linear infinite;
+  }
+  
+  .u-img {
+    height: 370px;
+    width: 100%;
     object-fit: cover;
-    margin: 0 0.5rem;
-    height: 1rem;
-}
-
-@media screen and (max-width: 840px) {
-    .intro{
-        flex-direction: column;
+    z-index: 1;
+    box-shadow: 3px 3px 3px white;
+  }
+  
+  .absolute {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .iconDots {
+    bottom: -1rem;
+    right: 0;
+    animation: dotsAnimation 5s linear infinite;
+  }
+  
+  .iconZigZag {
+    top: 1.5em;
+    left: -0.3em;
+    animation: zigzagAnimation 5s infinite;
+  }
+  
+  .icon-cube {
+    top: -0.8em;
+    right: 1em;
+    animation: cubeRotate 3s infinite;
+  }
+  
+  .icon-circle {
+    left: 0;
+    bottom: 0;
+    animation: shakeEffect 6s linear infinite;
+  }
+  
+  .icon-plus {
+    top: -0.8rem;
+    left: 50%;
+    animation: shakeEffectPlus 5s ease-in infinite;
+  }
+  
+  /* Animations */
+  @keyframes scaleImage {
+    0% {
+      scale: 1;
     }
-    .bg{
-        right: -10vw;
+    50% {
+      scale: 0.9;
+      filter: grayscale(0);
+      box-shadow: 3px 3px 10px white;
     }
-    .introContent{
-        font-size: 1.75rem;
+    100% {
+      scale: 1;
     }
-    .hello{
-        font-size: 4.5vw;
+  }
+  
+  @keyframes dotsAnimation {
+    50% {
+      transform: translateY(-15px);
     }
-    .downloadBtn{
-        padding: 0.3rem 1rem;
-        margin: 0;
+  }
+  
+  @keyframes zigzagAnimation {
+    50% {
+      left: 5%;
+      top: 3%;
     }
-    .icons{
-        margin: 1rem 0 0 0;
+  }
+  
+  @keyframes cubeRotate {
+    0% {
+      transform: rotateY(0deg) translateY(0px);
     }
-}
-
-@media screen and (max-width: 560px) {
-    .intro{
-        flex-direction: column;
+    50% {
+      transform: rotateY(180deg) translateY(-12px);
     }
-    .bg{
-        right: -24vw;
+    100% {
+      transform: rotateY(360deg) translateY(0px);
     }
-}
+  }
+  
+  @keyframes shakeEffect {
+    50% {
+      left: 5%;
+      bottom: 10%;
+    }
+  }
+  
+  @keyframes shakeEffectPlus {
+    50% {
+      top: 2%;
+      left: 48%;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .introContent {
+      font-size: 1.75rem;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .heading {
+      font-size: 20px;
+    }
+  
+    .subHeading {
+      font-size: 28px;
+    }
+  
+    .introPara {
+      font-size: 0.9rem;
+    }
+  
+    .userImage {
+      width: 300px;
+      height: 340px;
+      padding: 2rem;
+    }
+  
+    .u-img {
+      height: 320px;
+    }
+  
+    .iconDots,
+    .iconZigZag,
+    .icon-cube,
+    .icon-circle,
+    .icon-plus {
+      width: 20px;
+    }
+  }
+  
+  .typing::after {
+    content: "|";
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .cursor {
+    display: inline-block;
+    margin-left: 4px;
+    animation: blink 0.7s infinite;
+    color: yellow;
+    font-weight: bold;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  

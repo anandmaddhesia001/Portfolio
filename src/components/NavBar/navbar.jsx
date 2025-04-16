@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './navbar.css'
 import contactImg from '../../assets/contact.png'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo1.png'
 import {Link} from 'react-scroll'
 import menu from '../../assets/menu.png'
 

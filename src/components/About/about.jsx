@@ -14,22 +14,22 @@ const About = () => {
             <div className="skillBar">
                 <img src={UIDesign} alt="" className="skillBarImg" />
                 <div className="skillBarText">
-                    <h2>UI/UX Design</h2>
-                    <p>This is demo text write the content</p>
+                    <h2>Front-End Development</h2>
+                    <p>Crafting responsive, visually appealing user interfaces with modern technologies for seamless user experiences.</p>
                 </div>
             </div>
             <div className="skillBar">
                 <img src={WebDesign} alt="" className="skillBarImg" />
                 <div className="skillBarText">
-                    <h2>Web Design</h2>
-                    <p>This is demo text write the content</p>
+                    <h2>Back-End Development</h2>
+                    <p>Building robust server-side logic, APIs, and databases to ensure high performance and secure functionality.</p>
                 </div>
             </div>
             <div className="skillBar">
                 <img src={AppDesign} alt="" className="skillBarImg" />
                 <div className="skillBarText">
-                    <h2>App Design</h2>
-                    <p>This is demo text write the content</p>
+                    <h2>Problem Solving</h2>
+                    <p>Analyzing complex issues and implementing efficient, innovative solutions through logical and structured thinking.</p>
                 </div>
             </div>
         </div>
