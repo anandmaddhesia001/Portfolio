@@ -2,7 +2,7 @@ import React from 'react'
 import './techstack.css'
 import Html from "../../assets/HTML.png";
 import Css from "../../assets/CSS.png";
-import Js from '../../assets/javascript.svg'
+import Js from '../../assets/Javascript.svg'
 import Tailwind from '../../assets/Tailwind.png';
 import Github from "../../assets/github.svg";
 import react from "../../assets/react.png";
