@@ -11,7 +11,7 @@ import Chash from "../../assets/C++.png";
 import Unity from "../../assets/unity.png";
 import Bootstrap from "../../assets/Bootstrap.svg";
 import MaterialUI from "../../assets/MaterialUI.svg";
-import Git from "../../assets/Git.png";
+import Git from "../../assets/git.png";
 import Blender from "../../assets/blender.png";
 import Graphql from "../../assets/Graphql.svg";
 import Vercel from "../../assets/Vercel.svg";
