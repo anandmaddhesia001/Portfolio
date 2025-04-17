@@ -279,3 +279,78 @@
     50% { opacity: 0; }
   }
   
+  @media screen and (max-width: 768px) {
+    #intro {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding-top: 4rem;
+    }
+  
+    .imgContainer {
+      position: relative;
+      top: 0;
+      right: 0;
+      transform: none;
+      margin-bottom: 2rem;
+    }
+  
+    .introContent {
+      padding: 1rem;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .hello {
+      font-size: 1.8rem;
+    }
+  
+    .subHeading {
+      font-size: 1.8rem;
+    }
+  
+    .role {
+      font-size: 2rem;
+    }
+  
+    .introPara {
+      font-size: 0.85rem;
+      max-width: 90%;
+    }
+  
+    .downloadBtn {
+      padding: 0.8rem 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .userImage {
+      width: 260px;
+      height: 300px;
+    }
+  
+    .u-img {
+      height: 280px;
+    }
+  
+    .iconImg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .iconDots,
+    .iconZigZag,
+    .icon-cube,
+    .icon-circle,
+    .icon-plus {
+      display: none;
+    }
+  }
+
+  .hello,
+.subHeading,
+.role {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+}
