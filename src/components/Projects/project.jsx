@@ -17,7 +17,7 @@ const projects = [
     image: Img1,
     backgroundImage: Img1, 
     skills: [Html, Css],
-    appLink: "https://your-app-link.com"
+    appLink: "https://web-clone-net-flix-git-main-anand-kumar-maddheshiyas-projects.vercel.app/"
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const projects = [
     image: Img2,
     backgroundImage: Img2, 
     skills: [Html, Css, Js],
-    appLink: "https://your-app-link.com"
+    appLink: "https://leet-metric-five.vercel.app/"
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const projects = [
     image: Img3,
     backgroundImage: Img3, 
     skills: [Html, Tailwind, Js, react],
-    appLink: "https://your-app-link.com"
+    appLink: "https://password-generator-git-main-anand-kumar-maddheshiyas-projects.vercel.app/"
   }
 ];
 

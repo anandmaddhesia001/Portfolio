@@ -50,12 +50,9 @@ const Techstack = () => {
                 <img src={Chash} alt="" class="skillsLogo" />
                 <img src={Unity} alt="" class="skillsLogo" />
                 <img src={Tailwind} alt="" class="skillsLogo" />
-                <img src={Bootstrap} alt="" class="skillsLogo" />
-                <img src={MaterialUI} alt="" class="skillsLogo" />
                 <img src={Git} alt="" class="skillsLogo" />
                 <img src={Blender} alt="" class="skillsLogo" />
                 <img src={Github} alt="" class="skillsLogo" />
-                <img src={Graphql} alt="" class="skillsLogo" />
                 <img src={Vercel} alt="" class="skillsLogo" />
                 <img src={Python} alt="" class="skillsLogo" />
 
