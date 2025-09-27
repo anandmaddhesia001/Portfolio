@@ -70,7 +70,7 @@ const Intro = () => {
           <a href="https://www.instagram.com/__anand_maddheshiya/"><img src={Insta} alt="Instagram" className='iconImg' /></a>
           <a href="mailto:ak4889836@gmail.com?subject=Hello&body=This%20is%20a%20test%20email."><img src={Email} alt="Email" className='iconImg' /></a>
         </div>
-        <a href="https://drive.google.com/file/d/1OG024eEAR-mtxioPGeS4obP5joeNK0Xl/view?usp=sharing" download>
+        <a href="https://drive.google.com/file/d/1H7u8N3FOOt7gd_V3TEzicGTigl_Cmlu9/view?usp=sharing" download>
           <button className='downloadBtn'>Download Resume</button>
         </a>
       </div>

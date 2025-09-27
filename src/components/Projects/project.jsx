@@ -4,7 +4,7 @@ import Css from "../../assets/CSS.png";
 import Js from '../../assets/Javascript.svg'
 import Tailwind from '../../assets/Tailwind.png';
 import react from "../../assets/react.png";
-import Img1 from "../../assets/netflix.png";
+import Img1 from "../../assets/curreny.png";
 import Img2 from '../../assets/leetmetric.png'
 import Img3 from '../../assets/password.png'
 import "./project.css";
@@ -12,12 +12,12 @@ import "./project.css";
 const projects = [
   {
     id: 1,
-    title: "Netflix (Clone)",
-    description: "Developed functional clones of popular platforms like Netflix and Codeforces to replicate their core feature design.",
+    title: "Currency Convertor",
+    description: "Developed a responsive currency converter web application that converts between multiple international currencies in real-time.",
     image: Img1,
     backgroundImage: Img1, 
-    skills: [Html, Css],
-    appLink: "https://web-clone-net-flix-git-main-anand-kumar-maddheshiyas-projects.vercel.app/"
+    skills: [Html, Css, Js, react],
+    appLink: "https://currency-convertor-eight-blush.vercel.app/"
   },
   {
     id: 2,
