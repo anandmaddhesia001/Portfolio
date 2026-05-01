@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './intro.css';
-import bg from '../../assets/Anand.jpg';
+import bg from '../../assets/Anand.jpeg';
 import dots from '../../assets/dots.png';
 import cube from '../../assets/cube.png';
 import circle from '../../assets/circle.png';

@@ -4,20 +4,20 @@ import Css from "../../assets/CSS.png";
 import Js from '../../assets/Javascript.svg'
 import Tailwind from '../../assets/Tailwind.png';
 import react from "../../assets/react.png";
-import Img1 from "../../assets/curreny.png";
+import Img3 from "../../assets/password.png";
 import Img2 from '../../assets/leetmetric.png'
-import Img3 from '../../assets/password.png'
+import Img1 from '../../assets/mati.png'
 import "./project.css";
 
 const projects = [
   {
     id: 1,
-    title: "Currency Convertor",
-    description: "Developed a responsive currency converter web application that converts between multiple international currencies in real-time.",
+    title: "Mati Bandhu",
+    description: "Built a full-stack application providing crop yield prediction and fertilizer recommendations using machine learning.",
     image: Img1,
     backgroundImage: Img1, 
     skills: [Html, Css, Js, react],
-    appLink: "https://currency-convertor-eight-blush.vercel.app/"
+    appLink: "https://mati-bandhu.vercel.app/"
   },
   {
     id: 2,
@@ -38,7 +38,6 @@ const projects = [
     appLink: "https://password-generator-git-main-anand-kumar-maddheshiyas-projects.vercel.app/"
   }
 ];
-
 
 const Project = () => {
   return (
